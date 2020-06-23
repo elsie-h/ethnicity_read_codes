@@ -59,101 +59,23 @@ rc_ethnicity <- rc_ethnicity %>%
   mutate(join_var = str_trim(str_remove(read_term, '20..'), side = 'right')) %>%
   left_join(read_term_join, by = 'join_var') %>%
   mutate_at('cat_final', list(~ case_when(is.na(cat_final) & !is.na(join_cat_final) ~ join_cat_final,
-                                          TRUE ~ .)))
+                                          TRUE ~ .))) %>%
+  select(-starts_with('join'))
 ```
 
-Check the remaining ones 
-
+Check the remaining ones.
 
 ```{r}
 rc_ethnicity %>%
-  filter(is.na(cat_final)) %>%
-  filter_at(vars(starts_with('cat')), any_vars(str_detect(., regex('white', ignore_case = TRUE)))) %>%
-  select(starts_with('cat'), starts_with('code')) %>%
-  print(n = 50)
+  filter(is.na(cat_final))
 ```
 
 ```{r}
 rc_ethnicity <- rc_ethnicity %>%
-  mutate_at('cat_final', list(~ case_when(is.na(.) & cat_caliber_1 %in% c('White Irish',
-                                                               'White British',
-                                                               'White NOS') ~ 'White',
-                                          is.na(.) & cat_phenotype_1 %in% c('White Irish',
-                                                               'White British',
-                                                               'White NOS') ~ 'White',
-                                          TRUE ~ .)))
+  mutate_at('cat_final', list(~ case_when(!is.na(cat_final) ~ .,
+                                          is.na(cat_final) & read_term %in% c('Mid East (excl Israeli  Iranian & Arab) - eth cat 2001 cens') ~ 'Other',
+                                          is.na(cat_final) & read_term %in% c('Asian: Indian Indian Scot/Indian Brit- Scotland 2011 census',
+                                                           'Bangladeshi Bangladeshi Scot or Bangladeshi Brit- Scot 2011') ~ 'Asian British',
+                                          TRUE ~ NA_character_))) %>%
+  filter(!is.na(cat_final))
 ```
-
-```{r}
-rc_ethnicity %>%
-  filter(is.na(cat_final)) %>%
-  filter_at(vars(starts_with('cat')), any_vars(str_detect(., regex('mixed', ignore_case = TRUE))))  %>%
-  select(starts_with('cat'), read_term) %>%
-  print(n = 50)
-```
-
-The cat_vision_1 code for 'Mixed' seems appropriate given the Read codes
-
-```{r}
-rc_ethnicity <- rc_ethnicity %>%
-  mutate_at('cat_final', list(~ case_when(is.na(.) & cat_vision_1 == 'Mixed' ~ 'Mixed',
-                                          TRUE ~ .)))
-```
-
-
-```{r}
-rc_ethnicity %>%
-  filter(is.na(cat_final), cat_vision_1 == 'Black') %>%
-  select(starts_with('cat'), read_term) %>%
-  print(n = 50)
-```
-
-The cat_vision_1 code for 'Black' seems appropriate given the Read codes.
-
-```{r}
-rc_ethnicity <- rc_ethnicity %>%
-  mutate_at('cat_final', list(~ case_when(is.na(.) & cat_vision_1 == 'Black' ~ 'Black',
-                                          TRUE ~ .)))
-```
-
-From reading through the Read terms, all of the following were categorised as white in the OpenSafely categories.
-
-```{r}
-rc_ethnicity %>% filter(!is.na(cat_opensafely_2), str_detect(read_term, regex('greek|cypriot|turkish|italian|polish|Estonian|Latvian|Lithuanian|kosovan|albanian|bosnian|croatian|serbian|yugoslavia|romanian|bulgarian|czech|slovak|portuguese|roma|gypsy', ignore_case = TRUE)))
-```
-
-```{r}
-rc_ethnicity <- rc_ethnicity %>%
-  mutate_at('cat_final', list(~ case_when(is.na(.) & str_detect(read_term, regex('greek|cypriot|turkish|italian|polish|Estonian|Latvian|Lithuanian|kosovan|albanian|bosnian|croatian|serbian|yugoslavia|romanian|bulgarian|czech|slovak|portuguese|roma|gypsy', ignore_case = TRUE)) ~ 'White',
-                                          TRUE ~ .)))
-```
-
-Get rid of the 'unknown' ethnicity codes.
-
-```{r}
-rc_ethnicity <- rc_ethnicity %>% 
-  filter(!str_detect(read_term, regex('unknown', ignore_case = TRUE)),
-         read_term != 'Ethnic category - 2001 census',
-         read_term != 'Ethnic category - 2011 census',
-         read_term != 'Ethnic category not stated - 2001 census',
-         read_term != 'Ethnic groups (census)',
-         read_term != 'Ethnic group not recorded',
-         read_term != 'Ethnic groups (census) NOS',
-         read_term != 'Ethnic group not given - patient refused',
-         read_term != 'Ethnic category - 2011 census Scotland',
-         read_term != 'Ethnicity and other related nationality data')
-```
-
-```{r}
-rc_ethnicity <- rc_ethnicity %>%
-  mutate_at('cat_final', list(~ case_when(is.na(.) & str_detect(read_term, '^White') ~ 'White',
-                              TRUE ~ .)))
-```
-
-```{r}
-rc_ethnicity %>%
-  filter(!is.na(cat_opensafely_2), str_detect(read_term, regex('nepali|yemeni|chinese|vietnamese|latin|south american|central american', ignore_case = TRUE)))
-```
-
-
-
