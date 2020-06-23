@@ -1,0 +1,159 @@
+---
+title: "Untitled"
+author: "Elsie Horne"
+date: "23/06/2020"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r libraries}
+library(tidyverse)
+```
+
+```{r data, message=FALSE}
+rc_ethnicity <- read_csv('rc_ethnicity.csv')
+```
+
+## test
+
+The ethnicity codes I plan to use are those used by OpenSafely, specified here:   https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708  
+
+```{r}
+rc_ethnicity %>%
+  filter(!is.na(cat_vision_2), !is.na(cat_opensafely_2)) %>%
+  select(read_code, cat_vision_2, cat_opensafely_2) %>%
+  arrange(cat_opensafely_2) %>% 
+  print(n = 50)
+```
+ These correspond nicely, so cat_version_2 can be used to categorise version 2 Read codes, which are not in the OpenSafely list (OpenSafely only covers version 3).
+ 
+```{r}
+rc_ethnicity <- rc_ethnicity %>%
+  mutate(cat_final = case_when(!is.na(cat_opensafely_2) ~ cat_opensafely_2,
+                               cat_vision_2 == 'Asian or Asian British: Chinese' ~ 'Other',
+                               str_detect(cat_vision_2, '^Asian') ~ 'Asian British',
+                               str_detect(cat_vision_2, '^Black') ~ 'Black',
+                               str_detect(cat_vision_2, '^Other') ~ 'Other',
+                               str_detect(cat_vision_2, '^White') ~ 'White',
+                               TRUE ~ NA_character_
+                               ))
+```
+
+Try joining on Read codes, in case any read_term matches, but not read_code (i.e. different versions of Read code). Remove the census year.
+
+```{r}
+read_term_join <- rc_ethnicity %>% 
+  filter(!is.na(cat_final)) %>%
+  select(read_term, cat_final) %>%
+  # remove the census year
+  mutate(join_var = str_trim(str_remove(read_term, '20..'), side = 'right')) %>%
+  select(join_cat_final = cat_final, join_var)
+
+rc_ethnicity <- rc_ethnicity %>% 
+  # remove the census year
+  mutate(join_var = str_trim(str_remove(read_term, '20..'), side = 'right')) %>%
+  left_join(read_term_join, by = 'join_var') %>%
+  mutate_at('cat_final', list(~ case_when(is.na(cat_final) & !is.na(join_cat_final) ~ join_cat_final,
+                                          TRUE ~ .)))
+```
+
+Check the remaining ones 
+
+
+```{r}
+rc_ethnicity %>%
+  filter(is.na(cat_final)) %>%
+  filter_at(vars(starts_with('cat')), any_vars(str_detect(., regex('white', ignore_case = TRUE)))) %>%
+  select(starts_with('cat'), starts_with('code')) %>%
+  print(n = 50)
+```
+
+```{r}
+rc_ethnicity <- rc_ethnicity %>%
+  mutate_at('cat_final', list(~ case_when(is.na(.) & cat_caliber_1 %in% c('White Irish',
+                                                               'White British',
+                                                               'White NOS') ~ 'White',
+                                          is.na(.) & cat_phenotype_1 %in% c('White Irish',
+                                                               'White British',
+                                                               'White NOS') ~ 'White',
+                                          TRUE ~ .)))
+```
+
+```{r}
+rc_ethnicity %>%
+  filter(is.na(cat_final)) %>%
+  filter_at(vars(starts_with('cat')), any_vars(str_detect(., regex('mixed', ignore_case = TRUE))))  %>%
+  select(starts_with('cat'), read_term) %>%
+  print(n = 50)
+```
+
+The cat_vision_1 code for 'Mixed' seems appropriate given the Read codes
+
+```{r}
+rc_ethnicity <- rc_ethnicity %>%
+  mutate_at('cat_final', list(~ case_when(is.na(.) & cat_vision_1 == 'Mixed' ~ 'Mixed',
+                                          TRUE ~ .)))
+```
+
+
+```{r}
+rc_ethnicity %>%
+  filter(is.na(cat_final), cat_vision_1 == 'Black') %>%
+  select(starts_with('cat'), read_term) %>%
+  print(n = 50)
+```
+
+The cat_vision_1 code for 'Black' seems appropriate given the Read codes.
+
+```{r}
+rc_ethnicity <- rc_ethnicity %>%
+  mutate_at('cat_final', list(~ case_when(is.na(.) & cat_vision_1 == 'Black' ~ 'Black',
+                                          TRUE ~ .)))
+```
+
+From reading through the Read terms, all of the following were categorised as white in the OpenSafely categories.
+
+```{r}
+rc_ethnicity %>% filter(!is.na(cat_opensafely_2), str_detect(read_term, regex('greek|cypriot|turkish|italian|polish|Estonian|Latvian|Lithuanian|kosovan|albanian|bosnian|croatian|serbian|yugoslavia|romanian|bulgarian|czech|slovak|portuguese|roma|gypsy', ignore_case = TRUE)))
+```
+
+```{r}
+rc_ethnicity <- rc_ethnicity %>%
+  mutate_at('cat_final', list(~ case_when(is.na(.) & str_detect(read_term, regex('greek|cypriot|turkish|italian|polish|Estonian|Latvian|Lithuanian|kosovan|albanian|bosnian|croatian|serbian|yugoslavia|romanian|bulgarian|czech|slovak|portuguese|roma|gypsy', ignore_case = TRUE)) ~ 'White',
+                                          TRUE ~ .)))
+```
+
+Get rid of the 'unknown' ethnicity codes.
+
+```{r}
+rc_ethnicity <- rc_ethnicity %>% 
+  filter(!str_detect(read_term, regex('unknown', ignore_case = TRUE)),
+         read_term != 'Ethnic category - 2001 census',
+         read_term != 'Ethnic category - 2011 census',
+         read_term != 'Ethnic category not stated - 2001 census',
+         read_term != 'Ethnic groups (census)',
+         read_term != 'Ethnic group not recorded',
+         read_term != 'Ethnic groups (census) NOS',
+         read_term != 'Ethnic group not given - patient refused',
+         read_term != 'Ethnic category - 2011 census Scotland',
+         read_term != 'Ethnicity and other related nationality data')
+```
+
+```{r}
+rc_ethnicity <- rc_ethnicity %>%
+  mutate_at('cat_final', list(~ case_when(is.na(.) & str_detect(read_term, '^White') ~ 'White',
+                              TRUE ~ .)))
+```
+
+```{r}
+rc_ethnicity %>%
+  filter(!is.na(cat_opensafely_2), str_detect(read_term, regex('nepali|yemeni|chinese|vietnamese|latin|south american|central american', ignore_case = TRUE)))
+```
+
+
+
