@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-```{r libraries}
+```{r libraries, message=FALSE}
 library(tidyverse)
 ```
 
@@ -21,14 +21,14 @@ rc_ethnicity <- read_csv('rc_ethnicity.csv')
 
 ## test
 
-The ethnicity codes I plan to use are those used by OpenSafely, specified here:   https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708  
+I use the ethnicity codes specified by OpenSafely: https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708  
 
 ```{r}
 rc_ethnicity %>%
   filter(!is.na(cat_vision_2), !is.na(cat_opensafely_2)) %>%
   select(read_code, cat_vision_2, cat_opensafely_2) %>%
   arrange(cat_opensafely_2) %>% 
-  print(n = 50)
+  print(n=50)
 ```
  These correspond nicely, so cat_version_2 can be used to categorise version 2 Read codes, which are not in the OpenSafely list (OpenSafely only covers version 3).
  
@@ -48,6 +48,8 @@ Try joining on Read codes, in case any read_term matches, but not read_code (i.e
 
 ```{r}
 read_term_join <- rc_ethnicity %>% 
+  rename(read_term = read_term_1) %>%
+  # rows which have a final catego
   filter(!is.na(cat_final)) %>%
   select(read_term, cat_final) %>%
   # remove the census year
@@ -55,6 +57,7 @@ read_term_join <- rc_ethnicity %>%
   select(join_cat_final = cat_final, join_var)
 
 rc_ethnicity <- rc_ethnicity %>% 
+  rename(read_term = read_term_1) %>%
   # remove the census year
   mutate(join_var = str_trim(str_remove(read_term, '20..'), side = 'right')) %>%
   left_join(read_term_join, by = 'join_var') %>%
@@ -67,8 +70,12 @@ Check the remaining ones.
 
 ```{r}
 rc_ethnicity %>%
-  filter(is.na(cat_final))
+  filter(is.na(cat_final), !is.na(read_term)) %>%
+  select(read_term) %>%
+  print(n=20)
 ```
+
+Manually sort out the reamaining ones.
 
 ```{r}
 rc_ethnicity <- rc_ethnicity %>%
