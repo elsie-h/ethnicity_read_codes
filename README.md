@@ -13,4 +13,4 @@ I've constructed a Read code list that (hopefully!) meets the above criteria. Th
 3. A markdown file [prepare_list.R](https://github.com/elsie-h/ethnicity_read_codes/blob/master/prepare_list.md) documenting the methods that I used to map the ethnicity codes in the OpenSafely list to the codes in the CALIBER, Phenotype Library, Clinical Codes and Vision lists. 
 4. The final code list [rc_ethnicity_final.csv](https://github.com/elsie-h/ethnicity_read_codes/blob/master/rc_ethnicity_final.csv). 
 
-Please feel free to comment/suggest changes/use for your own research!
+Please comment/suggest changes/use for your own research!
