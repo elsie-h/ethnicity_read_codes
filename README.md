@@ -11,7 +11,7 @@ Therefore I've consolidated multiple lists into a single list that satisifies th
 
 1. The code I used to scrape the ethnicity Read code lists from the above websites [read_tables.R](https://github.com/elsie-h/ethnicity_read_codes/blob/master/read_tables.R). 
 2. The scraped and cleaned data [rc_ethnicity.csv](https://github.com/elsie-h/ethnicity_read_codes/blob/master/rc_ethnicity.csv). 
-3. A markdown file [prepare_list.R](https://github.com/elsie-h/ethnicity_read_codes/blob/master/prepare_list.md) documenting the methods that I used to map the ethnicity codes in the OpenSafely list to the codes in the CALIBER, Phenotype Library, Clinical Codes and Vision lists. 
+3. A markdown file [prepare_list.md](https://github.com/elsie-h/ethnicity_read_codes/blob/master/prepare_list.md) documenting the methods that I used to map the ethnicity codes in the OpenSafely list to the codes in the CALIBER, Phenotype Library, Clinical Codes and Vision lists. 
 4. The final code list [rc_ethnicity_final.csv](https://github.com/elsie-h/ethnicity_read_codes/blob/master/rc_ethnicity_final.csv). 
 
 Please comment/suggest changes/use for your own research!
