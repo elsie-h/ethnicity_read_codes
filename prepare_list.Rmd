@@ -9,57 +9,43 @@ output: rmarkdown::github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The following script loads the Read codes in rc_ethnicity.csv, and maps them to the categories used by OpenSafely:  
-https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708  
+The following script loads `rc_ethnicity.csv`, the lists of Read codes scraped in `read_tables.R`. All Read codes are then mapped to the [categories used in the OpenSafely project](https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708)  
 
 ```{r libraries, message=FALSE}
 library(tidyverse)
 ```
 
 ```{r data, message=FALSE}
-rc_ethnicity <- read_csv('rc_ethnicity.csv')
+rc_ethnicity <- read_csv('rc_ethnicity.csv') %>%
+  mutate(cat_final = cat_opensafely_2)
 ```
 
-As the `vision_2` list has version 2 and version 3 Read codes, I check how these correspond to the `opensafely_2` Read codes, so I can map the categoies from version 3 to version 2.   
+View the data where the Read codes are in the OpenSafely list:  
+
 ```{r}
 rc_ethnicity %>%
-  filter(!is.na(cat_vision_2), !is.na(cat_opensafely_2)) %>%
-  select(read_code, cat_vision_2, cat_opensafely_2) %>%
-  arrange(cat_opensafely_2) %>% 
-  print(n=50)
+  filter(!is.na(cat_final)) %>%
+  select(read_code, read_term_1, read_term_2, cat_final)
 ```
 
-These mostly correspond nicely, so cat_version_2 can be used to categorise version 2 Read codes, which are not in the OpenSafely list (OpenSafely only covers version 3), as in the below chunk. 
- 
-```{r}
-rc_ethnicity <- rc_ethnicity %>%
-  mutate(cat_final = case_when(!is.na(cat_opensafely_2) ~ cat_opensafely_2,
-                               cat_vision_2 == 'Asian or Asian British: Chinese' ~ NA_character_,
-                               str_detect(cat_vision_2, '^Asian') ~ 'Asian British',
-                               str_detect(cat_vision_2, '^Black') ~ 'Black',
-                               str_detect(cat_vision_2, '^Other') ~ 'Other',
-                               str_detect(cat_vision_2, '^White') ~ 'White',
-                               TRUE ~ NA_character_
-                               ))
-```
-
-The only ones I have left out are those read codes in the vision_2 `Asian or Asian British: Chinese` category. I check for Read codes with 'chinese' in the Read term.
+View the data where the Read codes are *not* in the OpenSafely list:  
 
 ```{r}
-rc_ethnicity %>% filter(str_detect(read_term_1, 
-                                   regex('chinese', ignore_case = TRUE))|
-                          str_detect(read_term_2, 
-                                     regex('chinese', ignore_case = TRUE))) %>%
-  select(read_code, read_term_1, cat_opensafely_2, cat_vision_2, cat_final) %>%
-  print(n=20)
+rc_ethnicity %>%
+  filter(is.na(cat_final)) %>%
+  select(read_code, read_term_1, read_term_2, cat_final)
 ```
 
-The Read terms for the version 2 Read codes are identical to those for the version 3 Read codes. As the version 3 ones are already categorised accoring to the cat_opensafely_2, joining on read_term should map these categories to the version 2 Read codes. Note that I remove the census year, assuming that identical read_terms from different census years will map to the same category.
+As the OpenSafely Read codes are all version 3 Read codes, I map the categories (`cat_opensafely_2`) to the version 2 Read codes by joining on the Read term (`read_term`). I remove the census year from `read_term` before doing so. There are two key assumptions here:  
+1. All Read terms correspond to the correct Read code (i.e. there are no errors in the tables that I scraped from the websites).  
+2. The 2001 and 2011 census Read codes should be mapped to the same category if identical other than the year.  
+
+I do this first for `read_term_1`, and will repeat for `read_term_2` if necessary.
 
 ```{r}
 read_term_join <- rc_ethnicity %>% 
   rename(read_term = read_term_1) %>%
-  # rows which have a final catego
+  # rows which have a final category
   filter(!is.na(cat_final)) %>%
   select(read_term, cat_final) %>%
   # remove the census year
@@ -76,16 +62,16 @@ rc_ethnicity <- rc_ethnicity %>%
   select(-starts_with('join'))
 ```
 
-Check the read_codes which have not yet been assigned a cat_final cateogry.
+Check the read_codes which have not yet been assigned a cat_final category.
 
 ```{r}
 rc_ethnicity %>%
-  filter(is.na(cat_final), !is.na(read_term)) %>%
-  select(read_term) %>%
+  filter(is.na(cat_final)) %>%
+  select(read_code, read_term) %>%
   print(n=20)
 ```
 
-I manually sort out these reamaining ones.
+Manually sort out these reamaining ones. The missing term for Read code (XaJRB) is 'Ethnic category not stated - 2001 census'.
 
 ```{r}
 rc_ethnicity <- rc_ethnicity %>%
@@ -96,6 +82,12 @@ rc_ethnicity <- rc_ethnicity %>%
                                           TRUE ~ NA_character_))) %>%
   filter(!is.na(cat_final)) %>%
   select(read_code, read_term, cat_final)
+```
+
+```{r}
+rc_ethnicity %>%
+  group_by(cat_final) %>%
+  count()
 ```
 
 ```{r}

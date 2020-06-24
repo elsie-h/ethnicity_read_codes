@@ -1,0 +1,445 @@
+read_code,cat_vision_1,cat_vision_2,cat_caliber_1,cat_phenotype_1,cat_opensafely_2,cat_res56_1,read_term_1,read_term_2
+916E.,Unknown,NA,Ethnic group not specified,NA,NA,NA,Patient ethnicity unknown,NA
+9i...,Unknown,NA,Ethnic group not specified,NA,NA,NA,Ethnic category - 2001 census,NA
+9i0..,Unknown,NA,Ethnic group not specified,Mixed Other,NA,White,British or mixed British - ethnic category 2001 census,NA
+9i00.,White,White: English or Welsh or Scottish or Northern Irish or British,White British,White British,NA,White,White British - ethnic category 2001 census,NA
+9i1..,White,NA,White Irish,White Irish,NA,White,Irish - ethnic category 2001 census,NA
+9i10.,White,White: Irish,White Irish,White Irish,NA,White,White Irish - ethnic category 2001 census,NA
+9i2..,White,NA,White Other,White Other,NA,White,Other White background - ethnic category 2001 census,NA
+9i20.,White,NA,White British,White British,NA,White,English - ethnic category 2001 census,NA
+9i21.,White,NA,White British,White British,NA,White,Scottish - ethnic category 2001 census,NA
+9i22.,White,NA,White British,White British,NA,White,Welsh - ethnic category 2001 census,NA
+9i23.,White,NA,White British,White British,NA,NA,Cornish - ethnic category 2001 census,NA
+9i24.,White,NA,White Irish,White Irish,NA,NA,Northern Irish - ethnic category 2001 census,NA
+9i25.,White,NA,White NOS,White NOS,NA,NA,Ulster Scots - ethnic category 2001 census,NA
+9i26.,Other,NA,White Other,White Other,NA,White,Cypriot (part not stated) - ethnic category 2001 census,NA
+9i27.,Other,NA,White Other,White Other,NA,White,Greek - ethnic category 2001 census,NA
+9i28.,Other,NA,White Other,White Other,NA,White,Greek Cypriot - ethnic category 2001 census,NA
+9i29.,Other,NA,White Other,White Other,NA,White,Turkish - ethnic category 2001 census,NA
+9i2A.,Other,NA,White Other,White Other,NA,White,Turkish Cypriot - ethnic category 2001 census,NA
+9i2B.,Other,NA,White Other,White Other,NA,White,Italian - ethnic category 2001 census,NA
+9i2C.,Unknown,White: Gypsy or Irish Traveller,White Irish,White Irish,NA,White,Irish Traveller - ethnic category 2001 census,NA
+9i2D.,Unknown,White: Gypsy or Irish Traveller,White Other,White Other,NA,White,Traveller - ethnic category 2001 census,NA
+9i2E.,Other,White: Gypsy or Irish Traveller,White Other,White Other,NA,White,Gypsy/Romany - ethnic category 2001 census,NA
+9i2F.,Unknown,NA,White Other,White Other,NA,White,Polish - ethnic category 2001 census,NA
+9i2G.,Other,NA,White Other,White Other,NA,NA,Baltic Estonian/Latvian/Lithuanian - ethn categ 2001 census,NA
+9i2H.,Other,NA,White Other,White Other,NA,White,Commonwealth (Russian) Indep States - ethn categ 2001 census,NA
+9i2J.,Other,NA,White Other,White Other,NA,White,Kosovan - ethnic category 2001 census,NA
+9i2K.,Other,NA,White Other,White Other,NA,White,Albanian - ethnic category 2001 census,NA
+9i2L.,Other,NA,White Other,White Other,NA,NA,Bosnian - ethnic category 2001 census,NA
+9i2M.,Other,NA,White Other,White Other,NA,NA,Croatian - ethnic category 2001 census,NA
+9i2N.,Other,NA,White Other,White Other,NA,NA,Serbian - ethnic category 2001 census,NA
+9i2P.,Other,NA,White Other,White Other,NA,White,Other republics former Yugoslavia - ethnic categ 2001 census,NA
+9i2Q.,White,NA,White NOS,White NOS,NA,NA,Mixed Irish and other White - ethnic category 2001 census,NA
+9i2R.,White,NA,White NOS,White NOS,NA,White,Oth White European/European unsp/Mixed European 2001 census,NA
+9i2S.,White,NA,White NOS,White NOS,NA,White,Other mixed White - ethnic category 2001 census,NA
+9i2T.,White,NA,White Other,White Other,NA,White,Other White or White unspecified ethnic category 2001 census,NA
+9i3..,Mixed,Mixed or multiple ethnic groups: White and Black Caribbean,Mixed White and Black,Mixed White and Black Caribbean,NA,Mixed,White and Black Caribbean - ethnic category 2001 census,NA
+9i4..,Mixed,NA,Mixed White and Black,Mixed White and Black African,NA,Mixed,White and Black African - ethnic category 2001 census,NA
+9i5..,Mixed,Mixed or multiple ethnic groups: White and Asian,Mixed White and Asian,Mixed White and Asian,NA,Mixed,White and Asian - ethnic category 2001 census,NA
+9i6..,Mixed,NA,Mixed Other,Mixed Other,NA,Mixed,Other Mixed background - ethnic category 2001 census,NA
+9i60.,Mixed,NA,Mixed Asian and Black,Mixed Other,NA,Mixed,Black and Asian - ethnic category 2001 census,NA
+9i61.,Mixed,NA,Mixed Asian and Black,Mixed Other,NA,Mixed,Black and Chinese - ethnic category 2001 census,NA
+9i62.,Mixed,NA,Mixed NOS,Mixed NOS,NA,Mixed,Black and White - ethnic category 2001 census,NA
+9i63.,Mixed,NA,Mixed Other,Mixed Other,NA,Mixed,Chinese and White - ethnic category 2001 census,NA
+9i64.,Asian,Asian or Asian British: Chinese,Mixed Other,Mixed Other,NA,Mixed,Asian and Chinese - ethnic category 2001 census,NA
+9i65.,Mixed,NA,Mixed Other,Mixed Other,NA,NA,Other Mixed or Mixed unspecified ethnic category 2001 census,NA
+9i7..,Asian,Asian or Asian British: Indian,Indian,Other Asian,NA,Asian/British Asian,Indian or British Indian - ethnic category 2001 census,NA
+9i8..,Asian,Asian or Asian British: Pakistani,Pakistani,Other Asian,NA,Asian/British Asian,Pakistani or British Pakistani - ethnic category 2001 census,NA
+9i9..,Asian,Asian or Asian British: Bangladeshi,Bangladeshi,Other Asian,NA,Asian/British Asian,Bangladeshi or British Bangladeshi - ethn categ 2001 census,NA
+9iA..,Asian,NA,Other Asian,Other Asian,NA,Asian/British Asian,Other Asian background - ethnic category 2001 census,NA
+9iA1.,Asian,NA,Indian,Indian,NA,NA,Punjabi - ethnic category 2001 census,NA
+9iA2.,Asian,NA,Pakistani,Pakistani,NA,NA,Kashmiri - ethnic category 2001 census,NA
+9iA3.,Asian,NA,Other Asian,Other Asian,NA,Other,East African Asian - ethnic category 2001 census,NA
+9iA4.,Asian,NA,Other ethnic group,NA,NA,Asian/British Asian,Sri Lankan - ethnic category 2001 census,NA
+9iA5.,Asian,NA,Other ethnic group,NA,NA,Asian/British Asian,Tamil - ethnic category 2001 census,NA
+9iA6.,Asian,NA,Other ethnic group,NA,NA,Asian/British Asian,Sinhalese - ethnic category 2001 census,NA
+9iA7.,Asian,NA,Mixed Asian and Black,Mixed Other,NA,Other,Caribbean Asian - ethnic category 2001 census,NA
+9iA8.,Asian,NA,Other Asian,Other Asian,NA,Asian/British Asian,British Asian - ethnic category 2001 census,NA
+9iA9.,Asian,NA,Other Asian,Other Asian,NA,Asian/British Asian,Mixed Asian - ethnic category 2001 census,NA
+9iAA.,Asian,NA,Other Asian,Other Asian,NA,NA,Other Asian or Asian unspecified ethnic category 2001 census,NA
+9iB..,Black,NA,Black Caribbean,Black Caribbean,NA,Black/Black British,Caribbean - ethnic category 2001 census,NA
+9iC..,Unknown,NA,Black African,NA,NA,Black/Black British,African - ethnic category 2001 census,NA
+9iD..,Other,NA,Black Other,NA,NA,Black/Black British,Other Black background - ethnic category 2001 census,NA
+9iD0.,Black,NA,Black African,NA,NA,Black/Black British,Somali - ethnic category 2001 census,NA
+9iD1.,Black,NA,Black African,NA,NA,Black/Black British,Nigerian - ethnic category 2001 census,NA
+9iD2.,Black,NA,Black Other,NA,NA,Black/Black British,Black British - ethnic category 2001 census,NA
+9iD3.,Mixed,NA,Black Other,NA,NA,NA,Mixed Black - ethnic category 2001 census,NA
+9iD4.,Black,NA,Black Other,NA,NA,NA,Other Black or Black unspecified ethnic category 2001 census,NA
+9iE..,Asian,Asian or Asian British: Chinese,Chinese,NA,NA,Other,Chinese - ethnic category 2001 census,NA
+9iF..,Other,Other ethnic group: Any other ethnic group,Other ethnic group,NA,NA,Other,Other - ethnic category 2001 census,NA
+9iF0.,Asian,NA,Other ethnic group,NA,NA,Other,Vietnamese - ethnic category 2001 census,NA
+9iF1.,Asian,NA,Other ethnic group,NA,NA,Other,Japanese - ethnic category 2001 census,NA
+9iF2.,Asian,NA,Other ethnic group,NA,NA,Other,Filipino - ethnic category 2001 census,NA
+9iF3.,Asian,NA,Other ethnic group,NA,NA,Other,Malaysian - ethnic category 2001 census,NA
+9iF4.,Unknown,NA,Other ethnic group,NA,NA,NA,Buddhist - ethnic category 2001 census,NA
+9iF5.,Unknown,NA,Other ethnic group,NA,NA,NA,Hindu - ethnic category 2001 census,NA
+9iF6.,Unknown,NA,Other ethnic group,NA,NA,NA,Jewish - ethnic category 2001 census,NA
+9iF7.,Unknown,NA,Other ethnic group,NA,NA,NA,Muslim - ethnic category 2001 census,NA
+9iF8.,Unknown,NA,Other ethnic group,NA,NA,NA,Sikh - ethnic category 2001 census,NA
+9iF9.,Other,Other ethnic group: Arab,Other ethnic group,NA,NA,Other,Arab - ethnic category 2001 census,NA
+9iFA.,Other,NA,Other ethnic group,NA,NA,Other,North African - ethnic category 2001 census,NA
+9iFB.,Other,NA,Other ethnic group,NA,NA,Other,Mid East (excl Israeli  Iranian & Arab) - eth cat 2001 cens,"Mid East (excl Israeli, Iranian & Arab) - eth cat 2001 cens"
+9iFC.,Other,NA,Other ethnic group,NA,NA,NA,Israeli - ethnic category 2001 census,NA
+9iFD.,Other,NA,Other ethnic group,NA,NA,Other,Iranian - ethnic category 2001 census,NA
+9iFE.,Other,NA,Other ethnic group,NA,NA,Other,Kurdish - ethnic category 2001 census,NA
+9iFF.,Other,NA,Other ethnic group,NA,NA,NA,Moroccan - ethnic category 2001 census,NA
+9iFG.,Other,NA,Other ethnic group,NA,NA,Other,Latin American - ethnic category 2001 census,NA
+9iFH.,Other,NA,Other ethnic group,NA,NA,Other,South and Central American - ethnic category 2001 census,NA
+9iFJ.,Other,NA,Other ethnic group,NA,NA,Other,Mauritian/Seychellois/Maldivian/St Helena eth cat 2001census,NA
+9iFK.,Unknown,Other ethnic group: Any other ethnic group,Other ethnic group,NA,NA,Other,Any other group - ethnic category 2001 census,NA
+9iG..,Other,Not stated,Ethnic group not specified,NA,NA,NA,Ethnic category not stated - 2001 census,NA
+9S...,Unknown,NA,Ethnic group not specified,NA,NA,NA,Ethnic groups (census),Ethnic groups (1991 census)
+9S1..,White,NA,White NOS,White NOS,White,White,White,White - ethnic group
+9S10.,White,NA,White British,White British,NA,White,White British,NA
+9S11.,White,NA,White Irish,White Irish,NA,White,White Irish,NA
+9S12.,White,NA,White Other,White Other,NA,NA,Other white ethnic group,NA
+9S13.,White,NA,White British,White British,NA,White,White Scottish,NA
+9S14.,White,NA,White British,White British,NA,White,Other white British ethnic group,NA
+9S2..,Black,NA,Black Caribbean,Black Caribbean,Black,Black/Black British,Black Caribbean,NA
+9S3..,Black,NA,Black African,NA,Black,Black/Black British,Black African,NA
+9S4..,Black,NA,Black Other,NA,Black,Black/Black British,Black other non-mixed origin,"Black, other, non-mixed origin"
+9S41.,Black,NA,Black Other,NA,Black,Black/Black British,Black British,NA
+9S42.,Black,NA,Black Caribbean,Black Caribbean,Black,Black/Black British,Black Caribbean,Black Caribbean &/or W.I. &/or Guyana
+9S43.,Black,NA,Black Other,NA,Black,Black/Black British,Black Arab,Black N African &/or Arab &/or Iranian
+9S44.,Black,NA,Black African,NA,Black,Black/Black British,Black - other African country,NA
+9S45.,Black,NA,Mixed Asian and Black,Mixed Other,Black,Black/Black British,Black E Afric Asia/Indo-Caribb,Black E Afric Asia &/or Indo-Caribb
+9S46.,Black,NA,Mixed Asian and Black,Mixed Other,Black,NA,Black Indian sub-continent,NA
+9S47.,Black,NA,Mixed Asian and Black,Mixed Other,Black,Black/Black British,Black - other Asian,NA
+9S48.,Black,NA,Black Other,NA,Black,Black/Black British,Black Black - other,NA
+9S5..,Mixed,NA,Black Other,NA,Mixed,Black/Black British,Black - other mixed,"Black - other, mixed"
+9S51.,Mixed,NA,Mixed NOS,Mixed NOS,Mixed,Mixed,Other Black - Black/White orig,NA
+9S52.,Mixed,NA,Mixed Asian and Black,Mixed Other,Mixed,Mixed,Other Black - Black/Asian orig,NA
+9S6..,Asian,NA,Indian,Indian,Asian British,Asian/British Asian,Indian,NA
+9S7..,Asian,NA,Pakistani,Pakistani,Asian British,Asian/British Asian,Pakistani,NA
+9S8..,Asian,NA,Bangladeshi,Bangladeshi,Asian British,Asian/British Asian,Bangladeshi,NA
+9S9..,Asian,NA,Chinese,NA,NA,Other,Chinese,NA
+9SA..,Other,NA,Other ethnic group,NA,Other,Other,Other ethnic non-mixed (NMO),NA
+9SA1.,Other,NA,Other ethnic group,NA,Other,NA,Brit. ethnic minor. spec.(NMO),NA
+9SA2.,Other,NA,Other ethnic group,NA,Other,Other,Brit. ethnic minor. unsp (NMO),NA
+9SA3.,Black,NA,Black Caribbean,Black Caribbean,Black,Black/Black British,Caribbean I./W.I./Guyana (NMO),Caribbean I. &/or W.I. &/or Guyana (NMO)
+9SA4.,Other,NA,Other ethnic group,NA,Other,Other,Iranian (NMO),N African Arab &/or Iranian (NMO)
+9SA5.,Other,NA,Black African,NA,Black,Black/Black British,Other African countries (NMO),NA
+9SA6.,Asian,NA,Mixed Asian and Black,Mixed Other,Asian British,Other,E Afric Asian/Indo-Carib (NMO),E Afric Asian &/or Indo-Carib (NMO)
+9SA7.,Asian,NA,Indian,Indian,Asian British,Asian/British Asian,Indian sub-continent (NMO),NA
+9SA8.,Asian,NA,Other Asian,Other Asian,Asian British,Asian/British Asian,Other Asian (NMO),NA
+9SA9.,Unknown,NA,White Irish,White Irish,White,White,Irish (NMO),NA
+9SAA.,Other,NA,White Other,White Other,White,Other,Greek (NMO),Greek &/or Greek Cypriot (NMO)
+9SAB.,Other,NA,White Other,White Other,White,Other,Turkish (NMO),Turkish &/or Turkish Cypriot (NMO)
+9SAC.,Other,NA,White Other,White Other,White,Other,Other European (NMO),NA
+9SAD.,Other,NA,Other ethnic group,NA,Other,Other,Other ethnic NEC (NMO),NA
+9SB..,Other,NA,Mixed Other,Mixed Other,Mixed,Mixed,Other ethnic  mixed origin,"Other ethnic, mixed origin"
+9SB1.,Mixed,NA,Mixed NOS,Mixed NOS,Mixed,Mixed,Other ethnic  Black/White orig,"Other ethnic, Black/White orig"
+9SB2.,Mixed,NA,Mixed White and Asian,Mixed White and Asian,Mixed,Mixed,Other ethnic  Asian/White orig,"Other ethnic, Asian/White orig"
+9SB3.,Mixed,NA,White NOS,Mixed Other,Mixed,Mixed,Other ethnic  mixed white orig,"Other ethnic, mixed white orig"
+9SB4.,Other,NA,Mixed Other,Mixed Other,Mixed,Mixed,Other ethnic  other mixed orig,"Other ethnic, other mixed orig"
+9SB5.,Mixed,NA,Mixed White and Black,Mixed White and Black Caribbean,NA,Mixed,Black Caribbean and White,NA
+9SB6.,Mixed,NA,Mixed White and Black,Mixed White and Black African,NA,Mixed,Black African and White,NA
+9SC..,Other,NA,Other ethnic group,NA,NA,Other,Vietnamese,NA
+9SD..,Unknown,NA,Ethnic group not specified,NA,NA,NA,Ethnic group not given - patient refused,NA
+9SE..,Unknown,NA,Ethnic group not specified,NA,NA,NA,Ethnic group not recorded,NA
+9SG..,Other,NA,Black Other,NA,NA,Black/Black British,Other black ethnic group,NA
+9SH..,Asian,NA,Other Asian,Other Asian,NA,Asian/British Asian,Other Asian ethnic group,NA
+9SI..,Unknown,NA,White Irish,White Irish,NA,White,Irish traveller,NA
+9SJ..,Other,NA,Other ethnic group,NA,NA,Other,Other ethnic group,NA
+9SZ..,Unknown,NA,Ethnic group not specified,NA,NA,NA,Ethnic groups (census) NOS,NA
+9t...,Other,NA,NA,NA,NA,NA,Ethnic category - 2011 census,NA
+9t0..,Other,NA,NA,NA,NA,NA,Ethnic category - 2011 census England and Wales,NA
+9t00.,White,White: English or Welsh or Scottish or Northern Irish or British,NA,NA,NA,NA,White:Eng/Welsh/Scot/NI/Brit - England and Wales 2011 census,NA
+9t01.,White,White: Irish,NA,NA,NA,NA,White: Irish - England and Wales ethnic category 2011 census,NA
+9t02.,White,White: Gypsy or Irish Traveller,NA,NA,NA,NA,White: Gypsy/Irish Traveller - Eng+Wales eth cat 2011 census,NA
+9t03.,White,White: Any other White background,NA,NA,NA,NA,White: other White backgrd- Eng+Wales ethnic cat 2011 census,NA
+9t04.,Mixed,Mixed or multiple ethnic groups: White and Black Caribbean,NA,NA,NA,NA,Mixed: White+Black Caribbean - Eng+Wales eth cat 2011 census,NA
+9t05.,Mixed,Mixed or multiple ethnic groups: White and Black African,NA,NA,NA,NA,Mixed: White+Black African - Eng+Wales eth cat 2011 census,NA
+9t06.,Mixed,Mixed or multiple ethnic groups: White and Asian,NA,NA,NA,NA,Mixed: White+Asian - Eng+Wales ethnic category 2011 census,NA
+9t07.,Mixed,Mixed or multiple ethnic groups: Any other Mixed or multiple ethnic background,NA,NA,NA,NA,Mixed: other Mixed/multiple backgrd - Eng+Wales 2011 census,NA
+9t08.,Asian,Asian or Asian British: Indian,NA,NA,NA,NA,Asian/Asian Brit: Indian - Eng+Wales ethnic cat 2011 census,NA
+9t09.,Asian,Asian or Asian British: Pakistani,NA,NA,NA,NA,Asian/Asian British:Pakistani- Eng+Wales eth cat 2011 census,NA
+9t0A.,Asian,Asian or Asian British: Bangladeshi,NA,NA,NA,NA,Asian/Asian Brit: Bangladeshi- Eng+Wales eth cat 2011 census,NA
+9t0B.,Asian,Asian or Asian British: Chinese,NA,NA,NA,NA,Asian/Asian Brit: Chinese - Eng+Wales ethnic cat 2011 census,NA
+9t0C.,Asian,Asian or Asian British: Any other Asian background,NA,NA,NA,NA,Asian/Asian Brit: other Asian- Eng+Wales eth cat 2011 census,NA
+9t0D.,Black,Black or African or Caribbean or Black British: African,NA,NA,NA,NA,Black/African/Carib/Black Brit: African- Eng+Wales 2011 cens,NA
+9t0E.,Black,Black or African or Caribbean or Black British: Caribbean,NA,NA,NA,NA,Black/African/Caribbn/Black Brit: Caribbean - Eng+Wales 2011,NA
+9t0F.,Black,Black or African or Caribbean or Black British: Any other Black or African or Caribbean background,NA,NA,NA,NA,Black/Afr/Carib/Black Brit: other Black- Eng+Wales 2011 cens,NA
+9t0G.,Other,Other ethnic group: Arab,NA,NA,NA,NA,Other ethnic group: Arab - Eng+Wales ethnic cat 2011 census,NA
+9t0H.,Other,Other ethnic group: Any other ethnic group,NA,NA,NA,NA,Other ethnic: any other grp - Eng+Wales eth cat 2011 census,NA
+9t1..,Other,NA,NA,NA,NA,NA,Ethnic category - 2011 census Northern Ireland,NA
+9t10.,White,NA,NA,NA,NA,NA,White - Northern Ireland ethnic category 2011 census,NA
+9t11.,Unknown,NA,NA,NA,NA,NA,Irish Traveller - Northern Ireland ethnic cat 2011 census,NA
+9T11.,Other,NA,NA,NA,White,NA,Pakeha,New Zealand European
+9t12.,Mixed,NA,NA,NA,NA,NA,Mixed: White and Black Caribbean - NI ethnic cat 2011 census,NA
+9t13.,Mixed,NA,NA,NA,NA,NA,Mixed: White and Black African - NI ethnic cat 2011 census,NA
+9t14.,Mixed,NA,NA,NA,NA,NA,Mixed: White and Asian - NI ethnic category 2011 census,NA
+9T15.,Other,NA,NA,NA,Other,NA,Cook Island Maori,NA
+9t16.,Asian,NA,NA,NA,NA,NA,Asian or Asian British: Indian - NI ethnic cat 2011 census,NA
+9t17.,Asian,NA,NA,NA,NA,NA,Asian/Asian British: Pakistani - NI ethnic cat 2011 census,NA
+9t18.,Asian,NA,NA,NA,NA,NA,Asian/Asian British: Bangladeshi - NI ethnic cat 2011 census,NA
+9t19.,Asian,NA,NA,NA,NA,NA,Asian/Asian British: Chinese - NI ethnic cat 2011 census,NA
+9t1A.,Asian,NA,NA,NA,NA,NA,Asian/Asian British: other Asian - NI ethnic cat 2011 census,NA
+9t1B.,Black,NA,NA,NA,NA,NA,Black/Afri/Carib/Black Brit: African- NI eth cat 2011 census,NA
+9t1C.,Black,NA,NA,NA,NA,NA,Black/Afri/Carib/Black Brit: Caribbean- NI eth cat 2011 cens,NA
+9t1D.,Black,NA,NA,NA,NA,NA,Black/Afri/Carib/Black Brit: other - NI eth cat 2011 census,NA
+9T1E.,Asian,NA,NA,NA,Asian British,NA,Other Asian,NA
+9t1F.,Other,NA,NA,NA,NA,NA,Other ethnic group: any other grp- NI ethnic cat 2011 census,NA
+9T1Y.,Other,NA,White Other,White Other,Other,NA,Other New Zealand ethnic group,NA
+9T1Z.,Other,NA,White Other,White Other,Other,NA,New Zealand ethnic group NOS,NA
+9t2..,Unknown,NA,NA,NA,NA,NA,Ethnic category - 2011 census Scotland,NA
+9t20.,White,NA,NA,NA,NA,NA,White: Scottish - Scotland ethnic category 2011 census,NA
+9t21.,White,NA,NA,NA,NA,NA,White: other British - Scotland ethnic category 2011 census,NA
+9t22.,White,NA,NA,NA,NA,NA,White: Irish - Scotland ethnic category 2011 census,NA
+9t23.,White,NA,NA,NA,NA,NA,White: Gypsy/Irish Traveller - Scotland ethnic cat 2011 cens,NA
+9t24.,White,NA,NA,NA,NA,NA,White: Polish - Scotland ethnic category 2011 census,NA
+9t25.,White,NA,NA,NA,NA,NA,White: other White ethnic grp- Scotland ethnic cat 2011 cens,NA
+9t26.,Mixed,NA,NA,NA,NA,NA,Mixed/multiple ethnic grps: any- Scot ethnic cat 2011 census,NA
+9t27.,Asian,NA,NA,NA,NA,NA,Asian: Pakistani/Pakistani Scot/Pakistani Brit- Scot 2011,NA
+9t28.,Asian,NA,NA,NA,NA,NA,Asian: Indian Indian Scot/Indian Brit- Scotland 2011 census,NA
+9t29.,Asian,NA,NA,NA,NA,NA,Bangladeshi Bangladeshi Scot or Bangladeshi Brit- Scot 2011,NA
+9t2A.,Asian,NA,NA,NA,NA,NA,Asian: Chinese - Scotland ethnic category 2011 census,NA
+9t2B.,Asian,NA,NA,NA,NA,NA,Asian: other Asian group - Scotland ethnic cat 2011 census,NA
+9t2C.,Black,NA,NA,NA,NA,NA,African: African/African Scot/African Brit - Scotland 2011,NA
+9t2D.,Unknown,NA,NA,NA,NA,NA,African: any other African - Scotland ethnic cat 2011 census,NA
+9t2E.,Black,NA,NA,NA,NA,NA,Carib/Black: Caribbean/Carib Scot/Carib Brit- Scotland 2011,NA
+9t2F.,Black,NA,NA,NA,NA,NA,Carib/Black: Black/Black Scot/Black Brit- Scotland 2011 cens,NA
+9t2G.,Black,NA,NA,NA,NA,NA,Carib/Black: any other Black/Caribbean grp - Scotland 2011,NA
+9t2H.,Other,NA,NA,NA,NA,NA,Other ethnic grp: Arab/Arab Scot/Arab British- Scotland 2011,NA
+9t2J.,Other,NA,NA,NA,NA,NA,Other ethnic grp: any other ethnic grp- Scotland 2011 census,NA
+9T3..,Other,NA,NA,NA,NA,NA,Yemeni,NA
+9T4..,Other,NA,NA,NA,NA,NA,Romanian,NA
+9T5..,Other,NA,NA,NA,NA,NA,Bulgarian,NA
+9T6..,Other,NA,NA,NA,NA,NA,Czech,NA
+9T7..,Other,NA,NA,NA,NA,NA,Slovak,NA
+9T8..,Other,NA,NA,NA,NA,NA,Portuguese,NA
+9T9..,Asian,NA,NA,NA,NA,NA,Nepali,NA
+9TC..,Other,NA,NA,NA,NA,NA,Roma ethnic group,NA
+9TC0.,Other,NA,NA,NA,NA,NA,Bulgarian Roma,NA
+9TC1.,Other,NA,NA,NA,NA,NA,Czech Roma,NA
+9TC2.,Other,NA,NA,NA,NA,NA,Polish Roma,NA
+9TC3.,Other,NA,NA,NA,NA,NA,Romanian Roma,NA
+9TC4.,Other,NA,NA,NA,NA,NA,Slovak Roma,NA
+9TC5.,Other,NA,NA,NA,NA,NA,Hungarian Roma,NA
+XactH,NA,White: English or Welsh or Scottish or Northern Irish or British,NA,NA,White,NA,White:Eng/Welsh/Scot/NI/Brit - England and Wales 2011 census,NA
+XactI,NA,White: Irish,NA,NA,White,NA,White: Irish - England and Wales ethnic category 2011 census,NA
+XactJ,NA,White: Gypsy or Irish Traveller,NA,NA,White,NA,White: Gypsy/Irish Traveller - Eng+Wales eth cat 2011 census,NA
+XactK,NA,White: Any other White background,NA,NA,White,NA,White: other White backgrd- Eng+Wales ethnic cat 2011 census,NA
+XactL,NA,Mixed or multiple ethnic groups: White and Black Caribbean,NA,NA,Mixed,NA,Mixed: White+Black Caribbean - Eng+Wales eth cat 2011 census,NA
+Xactd,NA,Mixed or multiple ethnic groups: White and Black African,NA,NA,Mixed,NA,Mixed: White+Black African - Eng+Wales eth cat 2011 census,NA
+Xacte,NA,Mixed or multiple ethnic groups: White and Asian,NA,NA,Mixed,NA,Mixed: White+Asian - Eng+Wales ethnic category 2011 census,NA
+Xactf,NA,Mixed or multiple ethnic groups: Any other Mixed or multiple ethnic background,NA,NA,Mixed,NA,Mixed: other Mixed/multiple backgrd - Eng+Wales 2011 census,NA
+Xactg,NA,Asian or Asian British: Indian,NA,NA,Asian British,NA,Asian/Asian Brit: Indian - Eng+Wales ethnic cat 2011 census,NA
+Xacth,NA,Asian or Asian British: Pakistani,NA,NA,Asian British,NA,Asian/Asian British:Pakistani- Eng+Wales eth cat 2011 census,NA
+Xacti,NA,Asian or Asian British: Bangladeshi,NA,NA,Asian British,NA,Asian/Asian Brit: Bangladeshi- Eng+Wales eth cat 2011 census,NA
+Xactj,NA,Asian or Asian British: Chinese,NA,NA,Other,NA,Asian/Asian Brit: Chinese - Eng+Wales ethnic cat 2011 census,NA
+Xactk,NA,Asian or Asian British: Any other Asian background,NA,NA,Asian British,NA,Asian/Asian Brit: other Asian- Eng+Wales eth cat 2011 census,NA
+Xactl,NA,Black or African or Caribbean or Black British: African,NA,NA,Black,NA,Black/African/Carib/Black Brit: African- Eng+Wales 2011 cens,NA
+Xactm,NA,Black or African or Caribbean or Black British: Caribbean,NA,NA,Black,NA,Black/African/Caribbn/Black Brit: Caribbean - Eng+Wales 2011,NA
+Xactn,NA,Black or African or Caribbean or Black British: Any other Black or African or Caribbean background,NA,NA,Black,NA,Black/Afr/Carib/Black Brit: other Black- Eng+Wales 2011 cens,NA
+Xacto,NA,Other ethnic group: Arab,NA,NA,Other,NA,Other ethnic group: Arab - Eng+Wales ethnic cat 2011 census,NA
+Xactp,NA,Other ethnic group: Any other ethnic group,NA,NA,Other,NA,Other ethnic: any other grp - Eng+Wales eth cat 2011 census,NA
+XaJRB,NA,Not stated,NA,NA,NA,NA,NA,NA
+XaQEa,NA,White: English or Welsh or Scottish or Northern Irish or British,NA,NA,White,NA,White British - ethnic category 2001 census,NA
+XaQEb,NA,White: Irish,NA,NA,White,NA,White Irish - ethnic category 2001 census,NA
+XaJSD,NA,White: Gypsy or Irish Traveller,NA,NA,White,NA,Gypsy/Romany - ethnic category 2001 census,NA
+XaJQy,NA,Mixed or multiple ethnic groups: White and Black Caribbean,NA,NA,Mixed,NA,White and Black Caribbean - ethnic category 2001 census,NA
+XaJR0,NA,Mixed or multiple ethnic groups: White and Asian,NA,NA,Mixed,NA,White and Asian - ethnic category 2001 census,NA
+XaJR2,NA,Asian or Asian British: Indian,NA,NA,Asian British,NA,Indian or British Indian - ethnic category 2001 census,NA
+XaJR3,NA,Asian or Asian British: Pakistani,NA,NA,Asian British,NA,Pakistani or British Pakistani - ethnic category 2001 census,NA
+XaJR4,NA,Asian or Asian British: Bangladeshi,NA,NA,Asian British,NA,Bangladeshi or British Bangladeshi - ethn categ 2001 census,NA
+XaJRL,NA,Asian or Asian British: Chinese,NA,NA,Mixed,NA,Asian and Chinese - ethnic category 2001 census,NA
+XaJSS,NA,Other ethnic group: Arab,NA,NA,Other,NA,Arab - ethnic category 2001 census,NA
+XaJSg,NA,Other ethnic group: Any other ethnic group,NA,NA,Other,NA,Any other group - ethnic category 2001 census,NA
+XaJSB,NA,White: Gypsy or Irish Traveller,NA,NA,White,NA,Irish Traveller - ethnic category 2001 census,NA
+XaJR9,NA,Asian or Asian British: Chinese,NA,NA,Other,NA,Chinese - ethnic category 2001 census,NA
+XaJRA,NA,Other ethnic group: Any other ethnic group,NA,NA,Other,NA,Other - ethnic category 2001 census,NA
+XaJSC,NA,White: Gypsy or Irish Traveller,NA,NA,White,NA,Traveller - ethnic category 2001 census,NA
+9T...,NA,NA,Ethnic group not specified,NA,NA,NA,Ethnicity and other related nationality data,NA
+9T1..,NA,NA,White Other,White Other,Other,NA,New Zealand ethnic groups,NA
+9T1A.,NA,NA,Other ethnic group,NA,Other,NA,Other Pacific ethnic group,NA
+134B.,NA,NA,NA,NA,White,NA,Race: Caucasian,NA
+134C.,NA,NA,NA,NA,Other,NA,Race: Arab,NA
+134D.,NA,NA,NA,NA,Other,NA,Race: Chinese,NA
+134E.,NA,NA,NA,NA,Other,NA,Race: Japanese,NA
+134F.,NA,NA,NA,NA,Other,NA,Race: Korean,NA
+134G.,NA,NA,NA,NA,Other,NA,Race: Oriental,NA
+134H.,NA,NA,NA,NA,Black,NA,Race: Afro-Caribbean,NA
+134I.,NA,NA,NA,NA,Asian British,NA,Race: Bangladeshi,NA
+134J.,NA,NA,NA,NA,Mixed,NA,Race: Mixed,NA
+134K.,NA,NA,NA,NA,Black,NA,Race: West indian,NA
+134L.,NA,NA,NA,NA,Mixed,NA,Race: Afro-caucasian,NA
+134M.,NA,NA,NA,NA,Asian British,NA,Race: Pakistani,NA
+9T12.,NA,NA,NA,NA,Other,NA,Other European in New Zealand,NA
+9T13.,NA,NA,NA,NA,Other,NA,New Zealand Maori,NA
+9T14.,NA,NA,NA,NA,Other,NA,Samoan,NA
+9T16.,NA,NA,NA,NA,Other,NA,Tongan,NA
+9T17.,NA,NA,NA,NA,Other,NA,Niuean,NA
+9T18.,NA,NA,NA,NA,Other,NA,Tokelauan,NA
+9T19.,NA,NA,NA,NA,Other,NA,Fijian,NA
+9T1B.,NA,NA,NA,NA,Asian British,NA,South East Asian,NA
+9T1C.,NA,NA,NA,NA,Other,NA,Chinese,NA
+X76Gp,NA,NA,NA,NA,Other,NA,Race: Other,NA
+XaBz7,NA,NA,NA,NA,Black,NA,Black West Indian,NA
+XaBz8,NA,NA,NA,NA,Black,NA,Black Guyana,NA
+Xacua,NA,NA,NA,NA,Mixed,NA,Mixed: other Mixed/multiple ethnic backgrd - NI 2011 census,NA
+Xacuc,NA,NA,NA,NA,Asian British,NA,Asian or Asian British: Indian - NI ethnic cat 2011 census,NA
+Xacui,NA,NA,NA,NA,Asian British,NA,Asian/Asian British: Pakistani - NI ethnic cat 2011 census,NA
+Xacuj,NA,NA,NA,NA,Asian British,NA,Asian/Asian British: Bangladeshi - NI ethnic cat 2011 census,NA
+Xacuk,NA,NA,NA,NA,Other,NA,Asian/Asian British: Chinese - NI ethnic cat 2011 census,NA
+Xacul,NA,NA,NA,NA,Asian British,NA,Asian/Asian British: other Asian - NI ethnic cat 2011 census,NA
+Xacum,NA,NA,NA,NA,Black,NA,Black/Afri/Carib/Black Brit: African- NI eth cat 2011 census,NA
+Xacun,NA,NA,NA,NA,Black,NA,Black/Afri/Carib/Black Brit: Caribbean- NI eth cat 2011 cens,NA
+Xacuo,NA,NA,NA,NA,Black,NA,Black/Afri/Carib/Black Brit: other - NI eth cat 2011 census,NA
+Xacup,NA,NA,NA,NA,Other,NA,Other ethnic group: Arab - NI ethnic category 2011 census,NA
+Xacuq,NA,NA,NA,NA,Other,NA,Other ethnic group: any other grp- NI ethnic cat 2011 census,NA
+XacuQ,NA,NA,NA,NA,White,NA,White - Northern Ireland ethnic category 2011 census,NA
+XacuR,NA,NA,NA,NA,White,NA,Irish Traveller - Northern Ireland ethnic cat 2011 census,NA
+Xacus,NA,NA,NA,NA,White,NA,White: Scottish - Scotland ethnic category 2011 census,NA
+XacuS,NA,NA,NA,NA,Mixed,NA,Mixed: White and Black Caribbean - NI ethnic cat 2011 census,NA
+Xacut,NA,NA,NA,NA,White,NA,White: other British - Scotland ethnic category 2011 census,NA
+XacuT,NA,NA,NA,NA,Mixed,NA,Mixed: White and Black African - NI ethnic cat 2011 census,NA
+Xacuu,NA,NA,NA,NA,White,NA,White: Irish - Scotland ethnic category 2011 census,NA
+XacuU,NA,NA,NA,NA,Mixed,NA,Mixed: White and Asian - NI ethnic category 2011 census,NA
+Xacuv,NA,NA,NA,NA,White,NA,White: Gypsy/Irish Traveller - Scotland ethnic cat 2011 cens,NA
+Xacux,NA,NA,NA,NA,White,NA,White: Polish - Scotland ethnic category 2011 census,NA
+Xacuy,NA,NA,NA,NA,White,NA,White: other White ethnic grp- Scotland ethnic cat 2011 cens,NA
+Xacuz,NA,NA,NA,NA,Mixed,NA,Mixed/multiple ethnic grps: any- Scot ethnic cat 2011 census,NA
+Xacv0,NA,NA,NA,NA,Asian British,NA,Asian: Pakistani/Pakistani Scot/Pakistani Brit- Scot 2011,NA
+Xacv2,NA,NA,NA,NA,Asian British,NA,"Asian: Indian, Indian Scot/Indian Brit- Scotland 2011 census",NA
+Xacv5,NA,NA,NA,NA,Asian British,NA,"Bangladeshi, Bangladeshi Scot or Bangladeshi Brit- Scot 2011",NA
+Xacva,NA,NA,NA,NA,Black,NA,Carib/Black: any other Black/Caribbean grp - Scotland 2011,NA
+Xacvb,NA,NA,NA,NA,Other,NA,Other ethnic grp: Arab/Arab Scot/Arab British- Scotland 2011,NA
+Xacvc,NA,NA,NA,NA,Other,NA,Other ethnic grp: any other ethnic grp- Scotland 2011 census,NA
+XacvF,NA,NA,NA,NA,Other,NA,Asian: Chinese - Scotland ethnic category 2011 census,NA
+XacvG,NA,NA,NA,NA,Asian British,NA,Asian: other Asian group - Scotland ethnic cat 2011 census,NA
+XacvH,NA,NA,NA,NA,Black,NA,African: African/African Scot/African Brit - Scotland 2011,NA
+XacvI,NA,NA,NA,NA,Black,NA,African: any other African - Scotland ethnic cat 2011 census,NA
+XacvJ,NA,NA,NA,NA,Black,NA,Carib/Black: Caribbean/Carib Scot/Carib Brit- Scotland 2011,NA
+XacvZ,NA,NA,NA,NA,Black,NA,Carib/Black: Black/Black Scot/Black Brit- Scotland 2011 cens,NA
+XaE4A,NA,NA,NA,NA,Other,NA,Vietnamese,NA
+XaedN,NA,NA,NA,NA,White,NA,Slovak Roma,NA
+XaedQ,NA,NA,NA,NA,White,NA,Czech Roma,NA
+XaedS,NA,NA,NA,NA,White,NA,Hungarian Roma,NA
+XaedT,NA,NA,NA,NA,White,NA,Polish Roma,NA
+XaedU,NA,NA,NA,NA,White,NA,Romanian Roma,NA
+XaedV,NA,NA,NA,NA,White,NA,Roma ethnic group,NA
+XaedW,NA,NA,NA,NA,White,NA,Bulgarian Roma,NA
+XaFwD,NA,NA,NA,NA,White,NA,White British,NA
+XaFwE,NA,NA,NA,NA,White,NA,White Irish,NA
+XaFwF,NA,NA,NA,NA,White,NA,Other white ethnic group,NA
+XaFwG,NA,NA,NA,NA,Mixed,NA,Mixed ethnic census group,NA
+XaFwH,NA,NA,NA,NA,Black,NA,Black - ethnic group,NA
+XaFwy,NA,NA,NA,NA,Black,NA,Other black ethnic group,NA
+XaFwz,NA,NA,NA,NA,Asian British,NA,Asian - ethnic group,NA
+XaFx0,NA,NA,NA,NA,Asian British,NA,Other Asian ethnic group,NA
+XaFx1,NA,NA,NA,NA,Other,NA,Other ethnic group,NA
+XaFx2,NA,NA,NA,NA,White,NA,Irish traveller,NA
+XaIB5,NA,NA,NA,NA,Mixed,NA,Black Caribbean and White,NA
+XaIB6,NA,NA,NA,NA,Mixed,NA,Black African and White,NA
+XaIuh,NA,NA,NA,NA,White,NA,White Scottish,NA
+XaIui,NA,NA,NA,NA,White,NA,Other white British ethnic group,NA
+XaJQv,NA,NA,NA,NA,White,NA,British or mixed British - ethnic category 2001 census,NA
+XaJQw,NA,NA,NA,NA,White,NA,Irish - ethnic category 2001 census,NA
+XaJQx,NA,NA,NA,NA,White,NA,Other White background - ethnic category 2001 census,NA
+XaJQz,NA,NA,NA,NA,Mixed,NA,White and Black African - ethnic category 2001 census,NA
+XaJR1,NA,NA,NA,NA,Mixed,NA,Other Mixed background - ethnic category 2001 census,NA
+XaJR5,NA,NA,NA,NA,Asian British,NA,Other Asian background - ethnic category 2001 census,NA
+XaJR6,NA,NA,NA,NA,Black,NA,Caribbean - ethnic category 2001 census,NA
+XaJR7,NA,NA,NA,NA,Black,NA,African - ethnic category 2001 census,NA
+XaJR8,NA,NA,NA,NA,Black,NA,Other Black background - ethnic category 2001 census,NA
+XaJRa,NA,NA,NA,NA,Black,NA,Black British - ethnic category 2001 census,NA
+XaJRb,NA,NA,NA,NA,Black,NA,Other Black or Black unspecified ethnic category 2001 census,NA
+XaJRc,NA,NA,NA,NA,Other,NA,Vietnamese - ethnic category 2001 census,NA
+XaJRC,NA,NA,NA,NA,White,NA,English - ethnic category 2001 census,NA
+XaJRd,NA,NA,NA,NA,Other,NA,Japanese - ethnic category 2001 census,NA
+XaJRD,NA,NA,NA,NA,White,NA,Scottish - ethnic category 2001 census,NA
+XaJRe,NA,NA,NA,NA,Other,NA,Filipino - ethnic category 2001 census,NA
+XaJRE,NA,NA,NA,NA,White,NA,Welsh - ethnic category 2001 census,NA
+XaJRf,NA,NA,NA,NA,Other,NA,Malaysian - ethnic category 2001 census,NA
+XaJRF,NA,NA,NA,NA,White,NA,Northern Irish - ethnic category 2001 census,NA
+XaJRg,NA,NA,NA,NA,White,NA,Cypriot (part not stated) - ethnic category 2001 census,NA
+XaJRG,NA,NA,NA,NA,White,NA,Cornish - ethnic category 2001 census,NA
+XaJRh,NA,NA,NA,NA,White,NA,Ulster Scots - ethnic category 2001 census,NA
+XaJRH,NA,NA,NA,NA,Mixed,NA,Black and Asian - ethnic category 2001 census,NA
+XaJRi,NA,NA,NA,NA,White,NA,Greek - ethnic category 2001 census,NA
+XaJRI,NA,NA,NA,NA,Mixed,NA,Black and Chinese - ethnic category 2001 census,NA
+XaJRj,NA,NA,NA,NA,White,NA,Greek Cypriot - ethnic category 2001 census,NA
+XaJRJ,NA,NA,NA,NA,Mixed,NA,Black and White - ethnic category 2001 census,NA
+XaJRk,NA,NA,NA,NA,White,NA,Turkish - ethnic category 2001 census,NA
+XaJRK,NA,NA,NA,NA,Mixed,NA,Chinese and White - ethnic category 2001 census,NA
+XaJRl,NA,NA,NA,NA,White,NA,Turkish Cypriot - ethnic category 2001 census,NA
+XaJRm,NA,NA,NA,NA,White,NA,Italian - ethnic category 2001 census,NA
+XaJRM,NA,NA,NA,NA,Mixed,NA,Other Mixed or Mixed unspecified ethnic category 2001 census,NA
+XaJRN,NA,NA,NA,NA,Mixed,NA,Mixed Asian - ethnic category 2001 census,NA
+XaJRO,NA,NA,NA,NA,Asian British,NA,Punjabi - ethnic category 2001 census,NA
+XaJRP,NA,NA,NA,NA,Asian British,NA,Kashmiri - ethnic category 2001 census,NA
+XaJRQ,NA,NA,NA,NA,Asian British,NA,East African Asian - ethnic category 2001 census,NA
+XaJRR,NA,NA,NA,NA,Asian British,NA,Sri Lankan - ethnic category 2001 census,NA
+XaJRS,NA,NA,NA,NA,Asian British,NA,Tamil - ethnic category 2001 census,NA
+XaJRT,NA,NA,NA,NA,Asian British,NA,Sinhalese - ethnic category 2001 census,NA
+XaJRU,NA,NA,NA,NA,Asian British,NA,British Asian - ethnic category 2001 census,NA
+XaJRV,NA,NA,NA,NA,Asian British,NA,Caribbean Asian - ethnic category 2001 census,NA
+XaJRW,NA,NA,NA,NA,Asian British,NA,Other Asian or Asian unspecified ethnic category 2001 census,NA
+XaJRX,NA,NA,NA,NA,Black,NA,Somali - ethnic category 2001 census,NA
+XaJRY,NA,NA,NA,NA,Mixed,NA,Mixed Black - ethnic category 2001 census,NA
+XaJRZ,NA,NA,NA,NA,Black,NA,Nigerian - ethnic category 2001 census,NA
+XaJSa,NA,NA,NA,NA,Other,NA,South and Central American - ethnic category 2001 census,NA
+XaJSb,NA,NA,NA,NA,Other,NA,Mauritian/Seychellois/Maldivian/St Helena eth cat 2001census,NA
+XaJSc,NA,NA,NA,NA,Other,NA,Buddhist - ethnic category 2001 census,NA
+XaJSd,NA,NA,NA,NA,Other,NA,Hindu - ethnic category 2001 census,NA
+XaJSe,NA,NA,NA,NA,Other,NA,Muslim - ethnic category 2001 census,NA
+XaJSE,NA,NA,NA,NA,White,NA,Polish - ethnic category 2001 census,NA
+XaJSf,NA,NA,NA,NA,Other,NA,Sikh - ethnic category 2001 census,NA
+XaJSF,NA,NA,NA,NA,White,NA,Baltic Estonian/Latvian/Lithuanian - ethn categ 2001 census,NA
+XaJSG,NA,NA,NA,NA,White,NA,Commonwealth (Russian) Indep States - ethn categ 2001 census,NA
+XaJSH,NA,NA,NA,NA,White,NA,Kosovan - ethnic category 2001 census,NA
+XaJSI,NA,NA,NA,NA,White,NA,Albanian - ethnic category 2001 census,NA
+XaJSJ,NA,NA,NA,NA,White,NA,Bosnian - ethnic category 2001 census,NA
+XaJSK,NA,NA,NA,NA,White,NA,Croatian - ethnic category 2001 census,NA
+XaJSL,NA,NA,NA,NA,White,NA,Serbian - ethnic category 2001 census,NA
+XaJSM,NA,NA,NA,NA,White,NA,Other republics former Yugoslavia - ethnic categ 2001 census,NA
+XaJSN,NA,NA,NA,NA,White,NA,Mixed Irish and other White - ethnic category 2001 census,NA
+XaJSO,NA,NA,NA,NA,White,NA,Other mixed White - ethnic category 2001 census,NA
+XaJSP,NA,NA,NA,NA,White,NA,Oth White European/European unsp/Mixed European 2001 census,NA
+XaJSQ,NA,NA,NA,NA,White,NA,Other White or White unspecified ethnic category 2001 census,NA
+XaJSR,NA,NA,NA,NA,Other,NA,Jewish - ethnic category 2001 census,NA
+XaJST,NA,NA,NA,NA,Black,NA,North African - ethnic category 2001 census,NA
+XaJSU,NA,NA,NA,NA,Other,NA,"Mid East (excl Israeli, Iranian & Arab) - eth cat 2001 cens",NA
+XaJSV,NA,NA,NA,NA,Other,NA,Israeli - ethnic category 2001 census,NA
+XaJSW,NA,NA,NA,NA,Other,NA,Iranian - ethnic category 2001 census,NA
+XaJSX,NA,NA,NA,NA,Other,NA,Kurdish - ethnic category 2001 census,NA
+XaJSY,NA,NA,NA,NA,Other,NA,Moroccan - ethnic category 2001 census,NA
+XaJSZ,NA,NA,NA,NA,Other,NA,Latin American - ethnic category 2001 census,NA
+XaN9x,NA,NA,NA,NA,Other,NA,Yemeni,NA
+XaR4o,NA,NA,NA,NA,White,NA,Romanian,NA
+XaR4p,NA,NA,NA,NA,White,NA,Bulgarian,NA
+XaR61,NA,NA,NA,NA,White,NA,Czech,NA
+XaVw5,NA,NA,NA,NA,White,NA,Slovak,NA
+XaW8w,NA,NA,NA,NA,White,NA,Portuguese,NA
+XaW95,NA,NA,NA,NA,Asian British,NA,Nepali,NA
+XE2Nt,NA,NA,NA,NA,Black,NA,Black Caribbean/W.I./Guyana,NA
+XE2Nu,NA,NA,NA,NA,Black,NA,Black N African/Arab/Iranian,NA
+XE2Nv,NA,NA,NA,NA,Black,NA,Black East African Asian/Indo-Caribbean,NA
+XE2Nw,NA,NA,NA,NA,Black,NA,Caribbean I./W.I./Guyana (NMO),NA
+XE2Nx,NA,NA,NA,NA,Other,NA,N African Arab/Iranian (NMO),NA
+XE2Ny,NA,NA,NA,NA,Asian British,NA,E Afric Asian/Indo-Carib (NMO),NA
+XE2Nz,NA,NA,NA,NA,White,NA,Greek/Greek Cypriot (NMO),NA
+XE2O0,NA,NA,NA,NA,White,NA,Turkish/Turkish Cypriot (NMO),NA
+XM1S3,NA,NA,NA,NA,Black,NA,Black North African,NA
+XM1S4,NA,NA,NA,NA,Black,NA,Black Arab,NA
+XM1S5,NA,NA,NA,NA,Black,NA,Black Iranian,NA
+XM1S6,NA,NA,NA,NA,Black,NA,Black East African Asian,NA
+XM1S7,NA,NA,NA,NA,Black,NA,Black Indo-Caribbean,NA
+XM1S8,NA,NA,NA,NA,Black,NA,Caribbean Island (NMO),NA
+XM1S9,NA,NA,NA,NA,Black,NA,West Indian (NMO),NA
+XM1SA,NA,NA,NA,NA,Black,NA,Guyana (NMO),NA
+XM1SB,NA,NA,NA,NA,Other,NA,North African Arab (NMO),NA
+XM1SC,NA,NA,NA,NA,Other,NA,Iranian (NMO),NA
+XM1SD,NA,NA,NA,NA,Asian British,NA,East African Asian (NMO),NA
+XM1SE,NA,NA,NA,NA,Asian British,NA,Indo-Caribbean (NMO),NA
+XM1SF,NA,NA,NA,NA,White,NA,Greek (NMO),NA
+XM1SG,NA,NA,NA,NA,White,NA,Greek Cypriot (NMO),NA
+XM1SH,NA,NA,NA,NA,White,NA,Turkish (NMO),NA
+XM1SI,NA,NA,NA,NA,White,NA,Turkish Cypriot (NMO),NA
+XS7AU,NA,NA,NA,NA,White,NA,Gypsies,NA
+Y1527,NA,NA,NA,NA,White,NA,Traveller,NA
+Y9930,NA,NA,NA,NA,White,NA,Race - British,NA
+Y9931,NA,NA,NA,NA,Asian British,NA,Race - Indian,NA
+Y9932,NA,NA,NA,NA,White,NA,Race - Mediterranean,NA
