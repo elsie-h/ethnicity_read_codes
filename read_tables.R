@@ -147,17 +147,6 @@ rc_ethnicity <- vision_1_tibble %>%
   full_join(phenotype_tibble, by = c('read_code')) %>%
   full_join(opensafely_tibble, by = c('read_code')) %>%
   full_join(clinicalcodes_res56_tibble, by = c('read_code')) 
-# %>%
-  # fill in read_terms in this order of priority
-  # the order isn't particularly important, just need a unique read term 
-  # for each Read code, 
-  # mutate(read_term = case_when(!is.na(read_term_vision_1) ~ read_term_vision_1,
-  #                              !is.na(read_term_caliber) ~ read_term_caliber,
-  #                              !is.na(read_term_phenotype) ~ read_term_phenotype,
-  #                              !is.na(read_term_opensafely) ~ read_term_opensafely,
-  #                              !is.na(read_term_res56) ~ read_term_res56,
-  #                              TRUE ~ NA_character_)) %>%
-  # select(-starts_with('read_term_'))
 
 # check for cases in which there are multiple read_terms for one Read code
 code_dictionary <- rc_ethnicity %>% 
