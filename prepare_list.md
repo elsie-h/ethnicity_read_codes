@@ -3,7 +3,10 @@ Preparing an ethnicity Read code list
 Elsie Horne
 23/06/2020
 
-The following script loads `rc_ethnicity.csv`, the lists of Read codes scraped in `read_tables.R`. All Read codes are then mapped to the [categories used in the OpenSafely project](https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708)
+The following script loads `rc_ethnicity.csv`, the lists of Read codes
+scraped in `read_tables.R`. All Read codes are then mapped to the
+[categories used in the OpenSafely
+project](https://github.com/opensafely/codelist-development/issues/7#issuecomment-620206708)
 
 ``` r
 library(tidyverse)
@@ -60,11 +63,17 @@ rc_ethnicity %>%
     ## 10 9i22.     Welsh - ethnic category 2001 census           <NA>        <NA>     
     ## # … with 168 more rows
 
-As the OpenSafely Read codes are all version 3 Read codes, I map the categories (`cat_opensafely_2`) to the version 2 Read codes by joining on the Read term (`read_term`). I remove the census year from `read_term` before doing so. There are two key assumptions here:
-1. All Read terms correspond to the correct Read code (i.e. there are no errors in the tables that I scraped from the websites).
-2. The 2001 and 2011 census Read codes should be mapped to the same category if identical other than the year.
+As the OpenSafely Read codes are all version 3 Read codes, I map the
+categories (`cat_opensafely_2`) to the version 2 Read codes by joining
+on the Read term (`read_term`). I remove the census year from
+`read_term` before doing so. There are two key assumptions here:  
+1\. All Read terms correspond to the correct Read code (i.e. there are
+no errors in the tables that I scraped from the websites).  
+2\. The 2001 and 2011 census Read codes should be mapped to the same
+category if identical other than the year.
 
-I do this first for `read_term_1`, and will repeat for `read_term_2` if necessary.
+I do this first for `read_term_1`, and will repeat for `read_term_2` if
+necessary.
 
 ``` r
 read_term_join <- rc_ethnicity %>% 
@@ -86,7 +95,8 @@ rc_ethnicity <- rc_ethnicity %>%
   select(-starts_with('join'))
 ```
 
-Check the read\_codes which have not yet been assigned a cat\_final category.
+Check the read\_codes which have not yet been assigned a cat\_final
+category.
 
 ``` r
 rc_ethnicity %>%
@@ -115,7 +125,8 @@ rc_ethnicity %>%
     ## 15 XaJRB     <NA>                                                       
     ## 16 9T...     Ethnicity and other related nationality data
 
-Manually sort out these reamaining ones. The missing term for Read code (XaJRB) is 'Ethnic category not stated - 2001 census'.
+Manually sort out these reamaining ones. The missing term for Read code
+(XaJRB) is ‘Ethnic category not stated - 2001 census’.
 
 ``` r
 rc_ethnicity <- rc_ethnicity %>%
@@ -146,4 +157,5 @@ rc_ethnicity %>%
 
 ``` r
 write_csv(rc_ethnicity, path = 'rc_ethnicity_final.csv')
+write_csv(rc_ethnicity, path = '/Users/elsiehorne/Docs/read_codes/lists_in/Elsie/rc_ethnicity_final.csv')
 ```

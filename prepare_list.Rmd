@@ -92,5 +92,6 @@ rc_ethnicity %>%
 
 ```{r}
 write_csv(rc_ethnicity, path = 'rc_ethnicity_final.csv')
+write_csv(rc_ethnicity, path = '/Users/elsiehorne/Docs/read_codes/lists_in/Elsie/rc_ethnicity_final.csv')
 ```
 
